@@ -166,11 +166,19 @@ public enum Techniques {
     ZoomOutUp(ZoomOutUpAnimator.class);
 
 
-
     private Class animatorClazz;
 
     private Techniques(Class clazz) {
         animatorClazz = clazz;
+    }
+
+    public static Techniques getTechnique(String name) {
+        for(Techniques enumValue : Techniques.class.getEnumConstants()) {
+            if(enumValue.name().equalsIgnoreCase(name)) {
+                return enumValue;
+            }
+        }
+        throw new IllegalArgumentException("There is no value with name '" + name + "' in Enum " + Techniques.class.getName());
     }
 
     public BaseViewAnimator getAnimator() {

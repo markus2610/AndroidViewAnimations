@@ -67,7 +67,7 @@ public class MyActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if (rope != null) {
-                    rope.stop(true);   
+                    rope.stop(true);
                 }
             }
         });
