@@ -24,10 +24,10 @@
 
 package com.daimajia.androidanimations.library.flippers;
 
-import android.view.View;
-
 import com.daimajia.androidanimations.library.BaseViewAnimator;
-import com.nineoldandroids.animation.ObjectAnimator;
+
+import android.animation.ObjectAnimator;
+import android.view.View;
 
 public class FlipYAnimator extends BaseViewAnimator {
     @Override

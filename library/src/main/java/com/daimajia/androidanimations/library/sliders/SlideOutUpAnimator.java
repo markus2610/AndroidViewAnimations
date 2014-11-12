@@ -24,11 +24,11 @@
 
 package com.daimajia.androidanimations.library.sliders;
 
+import com.daimajia.androidanimations.library.BaseViewAnimator;
+
+import android.animation.ObjectAnimator;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.daimajia.androidanimations.library.BaseViewAnimator;
-import com.nineoldandroids.animation.ObjectAnimator;
 
 public class SlideOutUpAnimator extends BaseViewAnimator {
     @Override
@@ -36,7 +36,7 @@ public class SlideOutUpAnimator extends BaseViewAnimator {
         ViewGroup parent = (ViewGroup)target.getParent();
         getAnimatorAgent().playTogether(
                 ObjectAnimator.ofFloat(target, "alpha", 1, 0),
-                ObjectAnimator.ofFloat(target,"translationY",0,-target.getBottom())
+                ObjectAnimator.ofFloat(target, "translationY", 0, -target.getBottom())
         );
     }
 }

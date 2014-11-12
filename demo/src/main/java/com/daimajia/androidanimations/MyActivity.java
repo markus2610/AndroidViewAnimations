@@ -1,5 +1,9 @@
 package com.daimajia.androidanimations;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+
+import android.animation.Animator;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.daimajia.androidanimations.library.Techniques;
-import com.daimajia.androidanimations.library.YoYo;
-import com.nineoldandroids.animation.Animator;
+import static com.daimajia.androidanimations.library.YoYo.YoYoString;
 
 public class MyActivity extends Activity {
 
@@ -70,7 +72,7 @@ public class MyActivity extends Activity {
             }
         });
     }
-    private YoYo.YoYoString rope;
+    private YoYoString rope;
 
 
     @Override

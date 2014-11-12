@@ -24,10 +24,10 @@
 
 package com.daimajia.androidanimations.library.attention;
 
-import android.view.View;
-
 import com.daimajia.androidanimations.library.BaseViewAnimator;
-import com.nineoldandroids.animation.ObjectAnimator;
+
+import android.animation.ObjectAnimator;
+import android.view.View;
 
 public class RubberBandAnimator extends BaseViewAnimator {
     @Override
